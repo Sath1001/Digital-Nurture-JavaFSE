@@ -1,0 +1,5 @@
+com\cognizant\junitadvanced\AllTests.class
+com\cognizant\junitadvanced\EvenCheckerTest.class
+com\cognizant\junitadvanced\PerformanceTesterTest.class
+com\cognizant\junitadvanced\ExceptionThrowerTest.class
+com\cognizant\junitadvanced\OrderedTests.class
