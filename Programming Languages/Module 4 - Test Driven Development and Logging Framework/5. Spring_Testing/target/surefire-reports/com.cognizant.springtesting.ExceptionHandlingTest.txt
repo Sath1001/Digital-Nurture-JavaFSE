@@ -1,0 +1,20 @@
+-------------------------------------------------------------------------------
+Test set: com.cognizant.springtesting.ExceptionHandlingTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.032 s <<< FAILURE! -- in com.cognizant.springtesting.ExceptionHandlingTest
+com.cognizant.springtesting.ExceptionHandlingTest.testUserNotFound -- Time elapsed: 0.024 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Unexpected exception type thrown, expected: <java.util.NoSuchElementException> but was: <java.lang.NullPointerException>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:67)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:35)
+	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3115)
+	at com.cognizant.springtesting.ExceptionHandlingTest.testUserNotFound(ExceptionHandlingTest.java:15)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+Caused by: java.lang.NullPointerException: Cannot invoke "com.cognizant.springtesting.repository.UserRepository.findById(Object)" because "<local3>.repository" is null
+	at com.cognizant.springtesting.service.UserService.getUserById(UserService.java:18)
+	at com.cognizant.springtesting.ExceptionHandlingTest.lambda$testUserNotFound$0(ExceptionHandlingTest.java:16)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:53)
+	... 6 more
+
