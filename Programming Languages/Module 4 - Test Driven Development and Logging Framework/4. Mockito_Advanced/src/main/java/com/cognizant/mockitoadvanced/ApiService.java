@@ -1,0 +1,15 @@
+package com.cognizant.mockitoadvanced;
+
+public class ApiService {
+
+    private final RestClient restClient;
+
+    public ApiService(RestClient restClient) {
+        this.restClient = restClient;
+    }
+
+    public String getApiResponse() {
+        return restClient.fetchResponse();
+    }
+
+}

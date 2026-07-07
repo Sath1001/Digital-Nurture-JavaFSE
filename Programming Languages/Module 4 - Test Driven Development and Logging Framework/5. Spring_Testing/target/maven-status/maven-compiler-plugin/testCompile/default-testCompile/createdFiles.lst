@@ -1,8 +1,0 @@
-com\cognizant\springtesting\CalculatorServiceTest.class
-com\cognizant\springtesting\ExceptionHandlingTest.class
-com\cognizant\springtesting\CreateUserTest.class
-com\cognizant\springtesting\RepositoryQueryTest.class
-com\cognizant\springtesting\UserControllerTest.class
-com\cognizant\springtesting\UserServiceTest.class
-com\cognizant\springtesting\IntegrationTest.class
-com\cognizant\springtesting\ParameterizedUserTest.class

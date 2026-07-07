@@ -1,7 +1,0 @@
-com\cognizant\springtesting\controller\UserController.class
-com\cognizant\springtesting\repository\UserRepository.class
-com\cognizant\springtesting\SpringTestingApplication.class
-com\cognizant\springtesting\service\UserService.class
-com\cognizant\springtesting\service\CalculatorService.class
-com\cognizant\springtesting\entity\User.class
-com\cognizant\springtesting\exception\GlobalExceptionHandler.class
