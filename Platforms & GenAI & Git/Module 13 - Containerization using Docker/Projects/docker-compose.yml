@@ -1,0 +1,27 @@
+version: '3.8'
+
+services:
+  eureka-server:
+    build:
+      context: ../../../Products and Frameworks/Module 8 - Microservices with Spring Boot 3 and Spring Cloud/Projects/eureka-discovery-server
+      dockerfile: Dockerfile
+    ports:
+      - "8761:8761"
+
+  account-service:
+    build:
+      context: ../../../Products and Frameworks/Module 8 - Microservices with Spring Boot 3 and Spring Cloud/Projects/account
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    environment:
+      - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://eureka-server:8761/eureka
+
+  loan-service:
+    build:
+      context: ../../../Products and Frameworks/Module 8 - Microservices with Spring Boot 3 and Spring Cloud/Projects/loan
+      dockerfile: Dockerfile
+    ports:
+      - "8081:8081"
+    environment:
+      - EUREKA_CLIENT_SERVICEURL_DEFAULTZONE=http://eureka-server:8761/eureka
